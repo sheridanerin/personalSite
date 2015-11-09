@@ -4,14 +4,12 @@ html, body {
 	height: 100%;
 }
 
-
 .topBar {
 	height: 60px;
 	width: 100%;
 	background-color: #121212;
 	margin-top: 0;
 	position: fixed;
-	color: white;
 }
 
 .topBarName {
@@ -19,7 +17,6 @@ html, body {
 	padding-left: 24px;
 	margin-top: 14px;
 }
-
 
 .links {
 	list-style-type: none;
@@ -43,4 +40,30 @@ a {
 
 a:hover {
 	color: gray;
+}
+
+.quoteBox {
+	z-index: -1;
+	margin-top: -135px;
+	background-color: #7933bf;
+	opacity: 0.6;
+	width: 100%;
+	height: 80px;
+}
+
+.quote {
+	z-index: 1;
+	font-family: cursive;
+	color: black;
+	margin: 0 auto;
+	margin-top: -70px;
+	width: 90%;
+}
+
+.centered {
+	z-index: 1;
+}
+
+.emphasis {
+	color: #77b0f9;
 }

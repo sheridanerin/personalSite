@@ -4,7 +4,8 @@ angular.module('mySiteApp')
 			restrict: 'E',
 			templateUrl: 'js/Templates/navbarTmpl.html',
 			scope: {
-				picture: '='
+				picture: '=',
+				quote: '='
 			}
 		}	
 })
