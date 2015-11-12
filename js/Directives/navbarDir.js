@@ -6,6 +6,10 @@ angular.module('mySiteApp')
 			scope: {
 				picture: '=',
 				quote: '='
+			},
+			link: function(scope, element, attrs){
+				jQuery('.fade-wrapper').hide().fadeIn('slow');
 			}
-		}	
-})
+		}
+
+});

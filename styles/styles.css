@@ -2,6 +2,9 @@ html, body {
 	padding: 0;
 	margin: 0;
 	height: 100%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 25px;
+	background-color: #f2f2f2;
 }
 
 .topBar {
@@ -10,6 +13,7 @@ html, body {
 	background-color: #121212;
 	margin-top: 0;
 	position: fixed;
+	z-index: 999;
 }
 
 .topBarName {
@@ -28,15 +32,22 @@ html, body {
 	margin-top: 5px;
 }
 
+.small-divider {
+	width: 100%;
+	height: 1px;
+	background-color: #829CAD;
+	margin-top: 60px;
+}
+
 .bannerPic {
 	width: 100%;
 	margin-top: 60px;
 }
 
-a {
+.topBar a,
+.links a {
 	text-decoration: none;
 	color: #ededed;
-	font-family: 'Raleway', sans-serif;
 }
 
 a:hover {
@@ -45,20 +56,124 @@ a:hover {
 
 .quoteBox {
 	margin-top: -100px;
-	background-color: rgba(99,149,242, .6);
+	background-color: rgba(130,156,173, .7);
 	width: 100%;
 	height: 50px;
 	position: absolute;
+	z-index: 1;
 }
 
 .quote {
-	font-family: cursive;
-	color: black;
+	font-family: 'Bad Script', cursive;
+	color: #ededef;
 	text-align: center;
 	line-height: 40px;
-	margin-top: 4px;
+	margin-top: 6px;
 }
 
-.emphasis {
-	color: #77b0f9;
+.content {
+	padding: 70px 0px 100px 0px;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.content h2 {
+	line-height: 1.3em;
+}
+
+.separator {
+	height: 20px;
+	width: 100%;
+	background-color: #121212;
+	margin-top: -10px;
+}
+
+.blue-separator {
+	height: 15px;
+	width: 100%;
+	background-color: #829cad;
+}
+
+.tan-separator {
+	height: 7px;
+	width: 100%;
+	background-color: #deded1;
+}
+
+.separator-large {
+	height: 50px;
+	width: 100%;
+	background-color: #121212;
+}
+
+.separator-small {
+	height: 7px;
+	width: 100%;
+	background-color: #121212;
+}
+
+.social-media-links {
+	width: 340px;
+	margin: 0 auto;
+}
+
+.social-media-links li {
+	list-style: none;
+	float: left;
+	padding-right: 20px;
+}
+
+.image-credits {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: .65em;
+	color: #ededed;
+	left: 20px;
+	position: absolute;
+	line-height: .6em;
+}
+
+.image-credits a {
+	text-decoration: none;
+	color: #ededed;
+}
+
+.image-credits a:hover {
+	color: gray;
+}
+
+.copyright {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: .65em;
+	color: #ededed;
+	right: 20px;
+	position: absolute;
+}
+
+.copyright i {
+	color: red;
+}
+.projects {
+	margin: 0 auto;
+	width: 60%;
+	border: 1px solid #bababa;
+}
+
+.code-icons li {
+	list-style: none;
+}
+
+.subcontent {
+	width: 500px;
+	border: 1px solid red;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+h2, h3 {
+	/*cursor: pointer;*/
 }

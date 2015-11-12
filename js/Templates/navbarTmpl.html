@@ -1,19 +1,26 @@
-
 <div class="topBar">
 	<h2 class="topBarName"><a href="/#/">Erin Sheridan</a></h2>
-		<ul class="links">
-			<li><a href="/#/whatpeoplesay">WHAT PEOPLE SAY</a></li>
-	    	<li><a href="/#/resume">RESUME</a></li>
-	    	<li><a href="/#/projects">PROJECTS</a></li>
-	    	<li><a href="/#/about">ABOUT</a></li>
-	    	<li><a href="/#/">HOME</a></li>
-	    </ul>
+	<ul class="links">
+		<li><a href="/#/whatpeoplesay">WHAT PEOPLE SAY</a></li>
+    	<li><a href="/#/resume">RESUME</a></li>
+    	<li><a href="/#/projects">PROJECTS</a></li>
+    	<li><a href="/#/about">ABOUT</a></li>
+	   	<li><a href="/#/">HOME</a></li>
+	</ul>
+	<div class="small-divider"></div>
 </div>
 
-<div>
-	<img ng-src="{{ picture }}" class="bannerPic">
+	<!-- <div class="small-divider"></div> -->
+
+<div class="fade-wrapper">
+
+	<div>
+		<img ng-src="{{ picture }}" class="bannerPic">
+	</div>
+
+	<div class="quoteBox">
+		<h2 class="quote">{{ quote }}</h2>
+	</div>
+	
 </div>
 
-<div class="quoteBox">
-	<h2 class="quote">{{ quote }}</h2>
-</div>
