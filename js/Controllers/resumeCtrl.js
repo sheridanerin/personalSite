@@ -6,7 +6,6 @@ angular.module('mySiteApp')
 		$scope.visibleContent = [];
 
 		$scope.showContent = function(content) {
-				console.log($scope.visibleContent);
 
 			if (content === 'experience' && $scope.visibleContent.indexOf('experience') !== -1) {
 				$scope.visibleContent.splice($scope.visibleContent.indexOf('experience'), 1);
@@ -30,7 +29,6 @@ angular.module('mySiteApp')
 			} else {
 				$scope.visibleContent.splice($scope.visibleContent.indexOf(content), 1);
 			}
-
 		}
 
 		$scope.visibleCheck = function(content) {
