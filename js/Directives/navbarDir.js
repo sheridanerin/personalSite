@@ -9,7 +9,8 @@ angular.module('mySiteApp')
 			},
 			link: function(scope, element, attrs){
 				jQuery('.fade-wrapper').hide().fadeIn('slow');
+				// jQuery('.topBar').css('opacity', (jQuery(document).scrollTop() / 500));
+
 			}
 		}
-
 });

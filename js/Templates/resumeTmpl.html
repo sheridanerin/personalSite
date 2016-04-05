@@ -5,61 +5,76 @@
 <div class="content">
 	<div class="resume-content">
 
-		<div class="p-s-option-bar" ng-click="showContent('personalStatement')" class="pointer"><h2>Personal Statement</h2></div>
-		<div class="p-s-statement" ng-show="visibleCheck('personalStatement')">
-			<p>Experienced IT professional, specializing in managing the implementation of data and telecommunication systems, ensuring the consistent delivery of the highest quality in service and customer satisfaction.<p>
+		<div class="option-bar pointer" ng-click="showContent('personalStatement')"><h2>Personal Statement <i class="fa fa-chevron-circle-down chevron-right"></i></h2> </div>
+		<div class="p-s-statement authorIndent" ng-show="visibleCheck('personalStatement')">
+			<p>Full Stack JavaScript developer with over 5 years of professional experience in Information Technology. Principal work experience in project management with a strong focus on solution development.  Passionate about teaching and learning. <p>
 		</div>
 
-		<div class="skillz-option-bar" ng-click="showContent('skillz')" class="pointer"><h2>Skillz</h2></div>
-		<div class="skillz-statement" ng-show="visibleCheck('skillz')">
-				<p>HTML5</p>
-				<p>CSS3</p>
-				<p>Javascript</p>
-				<p>AngularJS</p>
-				<p>jQuery</p>
-				<p>Firebase</p>
+		<div class="option-bar pointer" ng-click="showContent('skillz')"><h2>Skillz <i class="fa fa-chevron-circle-down chevron-right"></i></h2></div>
+		<div class="skillz-statement authorIndent" ng-show="visibleCheck('skillz')">
+				<table class="skillzTable">
+					<tr>
+						<td class="skillzRow"><p>Javascript</p></td>
+						<td class="skillzRow"><p>AngularJS</p></td>
+						<td class="skillzRow"><p>NodeJS</p></td>
+					</tr>
+					<tr>
+						<td class="skillzRow"><p>HTML5</p></td>
+						<td class="skillzRow"><p>MongoDB</p></td>
+						<td class="skillzRow"><p>D3JS</p></td>
+					</tr>
+					<tr>
+						<td class="skillzRow"><p>CSS3</p></td>
+						<td class="skillzRow"><p>jQuery</p></td>
+						<td class="skillzRow"><p>Gulp</p></td>
+					</tr>
+					<tr>
+						<td class="skillzRow"><p>Stylus</p></td>
+						<!-- <td><p>jQuery</p></td> -->
+					</tr>
+					<!-- <tr class="skillzRow">
+						<td class="skillzRow"><p>Gulp</p></td>
+						<td><p>Stylus</p></td>
+					</tr> -->
+				</table>
 		</div>
 
-		<div class="experience-option-bar" ng-click="showContent('experience')" class="pointer"><h2>Experience</h2></div>
-			<div class="option1 pointer" ng-click="showContent('PM')" ng-show="visibleCheck('experience')">
-				<h3>VoIP Implementations Project Manager, MegaPath / March 2013 to June 2015</h3>
+		<div class="option-bar pointer" ng-click="showContent('experience')"><h2>Experience <i class="fa fa-chevron-circle-down chevron-right"></i></h2></div>
+			<div class="job-option pointer authorIndent" ng-click="showContent('mentor')" ng-show="visibleCheck('experience')">
+				<h3>Mentor - Web Development, DevMountain | January 2016 to Present <i class="fa fa-chevron-circle-down chevron-right-small"></i></h3>
 			</div>
-			<div class="option1-content" class="subcontent" ng-show="visibleCheck('PM') && visibleCheck('experience')">
-				<p>- Track the planning, design, and implementation of data and voice solutions for business'.</p>
-				<p>- Communicate with customers, manage personnel, work independently, and research problems.</p>
-				<p>- Individualize service strategies for each customer to manage customer expectations for all technical and administrative tasks associated with installation of an order (i.e. Broadworks, Local Number Portability (LNP), Direct Inward Dialing (DID), Toll Free, Directory Listing, E911, Hosted Services, etc.)</p>
-				<p>- Provide personalized service for each customer to handle their unique and individual needs, ie: scope, impact, and budget of their individualized data and voice solution.</p>
-				<p>- Troubleshoot and test data circuits, VoIP call flows and network issues.</p>
+			<div class="job-content authorIndentLarge" class="subcontent" ng-show="visibleCheck('mentor') && visibleCheck('experience')">
+				<p>After finishing studies at DevMountain, I was hired as a mentor for the next cohort to help students master the subjects presented by instructors.<p>
 			</div>
 
-			<div class="option2 pointer" ng-click="showContent('voipSupport2')" ng-show="visibleCheck('experience')">
-				<h3>VoIP Support Tier II, MegaPath / April 2012 to March 2013</h3>
+			<div class="job-option pointer authorIndent" ng-click="showContent('PM')" ng-show="visibleCheck('experience')">
+				<h3>VoIP Implementations Project Manager, MegaPath | March 2013 to June 2015 <i class="fa fa-chevron-circle-down chevron-right-small"></i></h3>
 			</div>
-			<div class="option2-content" class="subcontent" ng-show="visibleCheck('voipSupport2') && visibleCheck('experience')">
-				<p>- Researched and resolved complex problems utilizing management and colleagues to continually learn, so as to provide the best service experience for the customer.</p>
-				<p>- Used remote access to resolve issues with router configurations and analyze data transmissions.</p>
-			</div>
-
-			<div class="option3" ng-click="showContent('voipSupport1')" ng-show="visibleCheck('experience')" class="pointer">
-				<h3>VoIP Support Tier I, MegaPath January 2012 to April 2012</h3>
-			</div>
-			<div class="option3-content" class="subcontent" ng-show="visibleCheck('voipSupport1') && visibleCheck('experience')">
-				<p>- Provided technical support via an inbound call queue in a high stress environment, to document/resolve issues with Voice over IP systems.</p>
+			<div class="job-content authorIndentLarge" class="subcontent" ng-show="visibleCheck('PM') && visibleCheck('experience')">
+				<p>Tracked the planning, design, and implementation of data and voice solutions for businesses.</p>
+				<p>Individualized service strategies for each customer to manage customer expectations for all technical and administrative tasks associated with installation of an order.</p>
 			</div>
 
-			<div class="option4" ng-click="showContent('apple')" ng-show="visibleCheck('experience')" class="pointer">
-				<h3>Team Lead - Customer Support, Apple Inc. June 2010 – August 2011</h3>
+			<div class="job-option pointer authorIndent" ng-click="showContent('voipSupport2')" ng-show="visibleCheck('experience')">
+				<h3>VoIP Support Tier II, MegaPath | January 2012 to March 2013 <i class="fa fa-chevron-circle-down chevron-right-small"></i></h3>
 			</div>
-			<div class="option4-content" class="subcontent" ng-show="visibleCheck('apple') && visibleCheck('experience')">
-				<p>- Oversaw a 15-member team providing technical support and repair services at one of the highest volume Apple Stores in Northern Virginia.</p>
-				<p>- Directed a team-mentoring and training program that tracked improvements in productivity and customer satisfaction.</p>
-				<p>- Directly responsible for maintaining inventory; recognized for achieving the “highest physical inventory scan” ever recorded in the Northern Virginia region.</p>
+			<div class="job-content authorIndentLarge" class="subcontent" ng-show="visibleCheck('voipSupport2') && visibleCheck('experience')">
+				<p>Researched and resolved complex problems utilizing management and colleagues to continually learn, so as to provide the best service experience for the customer.</p>
+				<p>Used remote access to resolve issues with router configurations and analyze data transmissions.</p>
 			</div>
 
-		<div class="acheivments-option-bar" ng-click="showContent('acheivements')" class="pointer"><h2>Acheivements and Interesting Factoids</h2></div>
-		<div class="acheivments-statement" class="subcontent" ng-show="visibleCheck('acheivements')" >
-			<p>- Nominated and selected by my peers for Employee of the month in January 2014. Chosen out of 2000+ employees.</p>
-			<p>- Nominated and selected by MegaPath Senior Management for the Acheivers Award for the year of 2014. 5 total employees selected and recognized for outstanding contributions throughout the year.</p>
+			<div class="job-option pointer authorIndent" ng-click="showContent('apple')" ng-show="visibleCheck('experience')">
+				<h3>Team Lead - Customer Support, Apple Inc. | June 2010 – August 2011 <i class="fa fa-chevron-circle-down chevron-right-small"></i> </h3>
+			</div>
+			<div class="job-content authorIndentLarge" class="subcontent" ng-show="visibleCheck('apple') && visibleCheck('experience')">
+				<p>Oversaw a 15-member team providing technical support and repair services at one of the highest volume Apple Stores in Northern Virginia.</p>
+				<p>Directed a team-mentoring and training program that tracked improvements in productivity and customer satisfaction.</p>
+			</div>
+
+		<div class="option-bar pointer" ng-click="showContent('acheivements')"><h2>Acheivements and Interesting Factoids <i class="fa fa-chevron-circle-down chevron-right"></i></h2></div>
+		<div class="acheivments-statement authorIndent" class="subcontent" ng-show="visibleCheck('acheivements')" >
+			<p>Nominated and selected by my peers for Employee of the month in January 2014. Chosen out of 2000+ employees.</p>
+			<p>Nominated and selected by MegaPath Senior Management for the Acheivers Award for the year of 2014. 5 total employees selected and recognized for outstanding contributions throughout the year.</p>
 		</div>
 
 	</div>

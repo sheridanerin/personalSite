@@ -21,6 +21,9 @@ angular.module('mySiteApp')
 				if ($scope.visibleContent.indexOf('apple') !== -1) {
 					$scope.visibleContent.splice($scope.visibleContent.indexOf('apple'), 1);
 				}
+				if ($scope.visibleContent.indexOf('mentor') !== -1) {
+					$scope.visibleContent.splice($scope.visibleContent.indexOf('mentor'), 1);
+				}
 				return;
 			}
 

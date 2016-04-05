@@ -19,7 +19,7 @@ html, body {
 .topBarName {
 	float: left;
 	padding-left: 24px;
-	margin-top: 14px;
+	margin-top: 16px;
 }
 
 .links {
@@ -78,8 +78,33 @@ a:hover {
 	margin: 0 auto;
 }
 
+.content2 {
+	padding: 70px 0px 20px 0px;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.wps-sub-content {
+	width: 70%;
+	margin: 0 auto;
+	padding: 40px 0px 100px 0px;
+}
+
+.wps-sub-content h1 {
+	text-align: center;
+}
+
 .content h2 {
 	line-height: 1.3em;
+}
+
+.content a {
+	text-decoration: none;
+}
+
+.project-title {
+	color: black;
 }
 
 .separator {
@@ -174,6 +199,69 @@ a:hover {
 	cursor: pointer;
 }
 
-h2, h3 {
-	/*cursor: pointer;*/
+#WPST-content {
+	text-align: left;
+}
+
+.authorIndent {
+	margin-left: 50px;
+}
+
+.authorIndentLarge {
+	margin-left: 100px;
+}
+
+.resume-content {
+	text-align: left;
+}
+
+.option-bar {
+	padding-left: 10px;
+	background-color: #829cad;
+	border-radius: 2px;
+	height: 2em;
+}
+
+.skillzTable {
+	width: 100%;
+
+}
+
+.skillzRow {
+	padding-left: 50px;
+	/*border: 1px solid red;*/
+}
+
+.chevron-right {
+	float: right;
+	padding: 4px 20px 0 0;
+}
+
+.chevron-right-small {
+	float: right;
+	padding: 3px 50px 0 0;
+}
+
+
+.job-option {
+	background-color: #b8cddb;
+	border-radius: 3px;
+	height: 1.5em;
+	padding-left: 10px;
+}
+
+.job-content {
+	border-radius: 3px;
+	background-color: #e0e0e0;
+	padding: 2px 15px;
+
+}
+
+.nodecoration {
+	text-decoration: none;
+	color: black;
+}
+
+.nodecoration:hover {
+	text-decoration: underline;
 }
